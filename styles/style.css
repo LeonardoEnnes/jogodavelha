@@ -1,0 +1,56 @@
+body{
+    text-align: center; /*como a aplicação é pequena deixei para que toda pagina fique centralizada*/
+    background: rgb(8, 103, 141);
+}
+
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color:slategray;
+    border: solid 1px black;
+    display: inline-block; /*é um bloco mas vai manter na mesma linha*/
+}
+
+.o{
+    position: relative;
+}
+
+.o::after{
+    position: absolute;
+    content: "\2B55";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0; /*top,bottom,left e right servem para forçar a centralização do objeto dentro do square **lembrando*/
+    right: 0;
+    left: 0;
+}
+
+.x{
+    position: relative;
+}
+
+.x::after{
+    position: absolute;
+    content: "\274C";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0; 
+    right: 0;
+    left: 0;
+}
